@@ -1,0 +1,42 @@
+*{
+    margin: 0;padding: 0;
+    box-sizing: border-box;
+}
+
+body{
+    font-family: Arial, "Helvetica Neue", Helvetica, sans-serif;
+}
+
+header {
+    background-color: black;
+    color: gray;
+    text-align: center;
+    padding: 20px;
+    margin-top: 10px;
+}
+
+header>*{
+    padding: 10px;
+}
+
+header>p{
+    margin-bottom: 10px;
+}
+
+.mega-menu{
+    background-color: rgb(83, 83, 83);
+}
+.mega-menu>ul{
+    display: flex;
+    padding: 20px;
+    list-style-type: none;
+}
+.mega-menu>ul>li a{
+    padding: 20px;
+    text-decoration: none;
+    color: #fff;
+}
+
+.mega-menu:hover{
+    box-shadow:0px 0px 20px #fff ;
+}
