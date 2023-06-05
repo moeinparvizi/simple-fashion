@@ -130,3 +130,58 @@ header>p {
     margin: 20px;
     height: 100vh;
 }
+
+/* grouping collection */
+
+.container section{
+    width: 100%;
+    display: flex;
+    justify-content: space-between;
+}
+.container>section>figure{position: relative;}
+
+.container>section>figure>img{width: 100%;}
+
+.container>section>figure figcaption{
+    background-color: #fff;
+    color: #000;
+    top: 42%;
+    left: 38%;
+    position: absolute;
+    text-align: center;
+    font-size: 19px;
+    font-weight: bold;
+    padding: 10px;
+}
+
+.container>section>figure>figcaption::before{
+    content: '';
+    border: 5px solid #b14545;
+    width: 0;
+    height: 0;
+    position: absolute;
+    top: 0;left: 0;
+    transition: .4s;
+    -webkit-transition: .4s;
+    -moz-transition: .4s;
+    -ms-transition: .4s;
+    -o-transition: .4s;
+    overflow: hidden;
+}
+.container>section>figure>figcaption::after{
+    content: '';
+    border: 5px solid #b14545;
+    width: 0;
+    height: 0;
+    position: absolute;
+    top: 0;left: 0;
+    transition: .4s;
+    -webkit-transition: .4s;
+    -moz-transition: .4s;
+    -ms-transition: .4s;
+    -o-transition: .4s;
+    overflow: hidden;
+}
+
+.container>section>figure:hover ::before{height: 150%;}
+.container>section>figure:hover ::after{width: 150%;}
