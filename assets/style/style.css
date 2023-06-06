@@ -5,21 +5,24 @@
 }
 
 body {
-    font-family: Arial, "Helvetica Neue", Helvetica, sans-serif;
+    font-family: 'Open Sans', sans-serif;
 }
+
+a {text-decoration: none;}
+ul {list-style-type: none;}
 
 /* header styles */
 
 header {
-    background-color: black;
+    background-color: #f0f0f0;
     color: gray;
     text-align: center;
     padding: 20px;
-    margin-top: 10px;
 }
 
 header>* {
     padding: 10px;
+    text-transform: capitalize;
 }
 
 header>p {
@@ -27,7 +30,7 @@ header>p {
 }
 
 .mega-menu {
-    background-color: rgb(83, 83, 83);
+    background-color: rgb(182, 182, 182);
     transition: .3s;
     -webkit-transition: .3s;
     -moz-transition: .3s;
@@ -44,21 +47,20 @@ header>p {
     list-style-type: none;
     position: relative;
     overflow: hidden;
+    text-transform: uppercase;
 }
 
 .mega-menu>ul>li a {
     padding: 20px;
-    text-decoration: none;
-    color: #fff;
-    transition: .4s;
-    -webkit-transition: .4s;
-    -moz-transition: .4s;
-    -ms-transition: .4s;
-    -o-transition: .4s;
+    color: #141414;
+    transition: .2s;
+    -webkit-transition: .2s;
+    -moz-transition: .2s;
+    -ms-transition: .2s;
+    -o-transition: .2s;
 }
 
 .mega-menu:hover {
-    box-shadow: 0px 0px 20px #fff;
     border-radius: 10px;
     -webkit-border-radius: 10px;
     -moz-border-radius: 10px;
@@ -72,11 +74,11 @@ header>p {
     bottom: -10px;
     width: 0;
     border: 1px solid darkred;
-    transition: 1s;
-    -webkit-transition: 1s;
-    -moz-transition: 1s;
-    -ms-transition: 1s;
-    -o-transition: 1s;
+    transition: .5s;
+    -webkit-transition: .5s;
+    -moz-transition: .5s;
+    -ms-transition: .5s;
+    -o-transition: .5s;
 }
 
 .mega-menu>ul>li>a:hover::before {
@@ -125,24 +127,21 @@ header>p {
 
 /* container home page styles */
 
-.container {
-    background-color: black;
-    margin: 20px;
-    height: 100vh;
-}
+.container {margin: 20px;}
 
 /* grouping collection */
 
-.container section{
+.container .container-collection{
     width: 100%;
     display: flex;
     justify-content: space-between;
+    margin-bottom: 20px;
 }
-.container>section>figure{position: relative;}
+.container>.container-collection>figure{position: relative;}
 
-.container>section>figure>img{width: 100%;}
+.container>.container-collection>figure>img{width: 100%;}
 
-.container>section>figure figcaption{
+.container>.container-collection>figure figcaption{
     background-color: #fff;
     color: #000;
     top: 42%;
@@ -152,9 +151,10 @@ header>p {
     font-size: 19px;
     font-weight: bold;
     padding: 10px;
+    text-transform: capitalize;
 }
 
-.container>section>figure>figcaption::before{
+.container>.container-collection>figure>figcaption::before{
     content: '';
     border: 5px solid #b14545;
     width: 0;
@@ -168,7 +168,7 @@ header>p {
     -o-transition: .4s;
     overflow: hidden;
 }
-.container>section>figure>figcaption::after{
+.container>.container-collection>figure>figcaption::after{
     content: '';
     border: 5px solid #b14545;
     width: 0;
@@ -185,3 +185,201 @@ header>p {
 
 .container>section>figure:hover ::before{height: 150%;}
 .container>section>figure:hover ::after{width: 150%;}
+
+/* womans suggetion */
+
+.container-sugg{
+    display: flex;
+    justify-content: space-between ;
+    position: relative;
+}
+
+.container-sugg>div figure {
+    position: relative;
+    overflow: hidden;
+    width: 300px;
+}
+
+.container-sugg>div figure::before{
+    content: 'style';
+    background-color: #0000004f;
+    width: 0;
+    position: absolute;
+    top: 0;left: 0;
+    transition: 1s;
+    -webkit-transition: 1s;
+    -moz-transition: 1s;
+    -ms-transition: 1s;
+    -o-transition: 1s;
+    text-align: center;
+    padding-top: 20px;
+    font-size: 30px;
+    font-weight: bold;
+    text-transform: capitalize;
+    overflow: hidden;
+}
+
+.container-sugg>div>figure:hover::before{
+    height: 100%;
+    width: 100%;
+}
+
+.container-sugg>div>figure img{
+    width: 400px;
+    height: 620px;
+}
+
+.container-sugg>div>figure>figcaption{
+    color: #000;
+    top: 42%;
+    left: 38%;
+    position: absolute;
+    text-align: center;
+    font-size: 19px;
+    font-weight: bold;
+    padding: 10px;
+    text-transform: uppercase;
+}
+
+.sugg-head{
+    padding: 20px;
+    position: absolute;
+    top: 5px;left: 45%;
+    z-index: 7;
+    text-transform: capitalize;
+    font-size: 25px;
+}
+
+.sugg-head :first-of-type{
+    border-bottom: 2px solid black;
+}
+
+.sugg-head :first-child ~ *{
+    color: #00000070;
+}
+
+.sugg-head *{
+    padding: 10px;
+}
+
+.sugg-pro{
+    margin: 100px 0;
+    text-align: center;
+    display: flex;
+    flex-direction: row;
+    flex-wrap: wrap;
+}
+
+.sugg-pro *{
+    padding: 5px;
+}
+
+.sugg-pro>article>figure{
+    position: relative;
+    overflow: hidden;
+    transition: .4s;
+}
+
+.sugg-pro>article>figure :nth-last-of-type(3){
+    position: absolute;
+    top: 5%;left: 78%;
+    opacity: 0;
+}
+
+.sugg-pro>article>figure:hover :nth-last-of-type(3){
+    opacity: 100%;
+}
+
+.sugg-pro>article>figure>a{
+    transition: .6s;
+    color: black;
+    -webkit-transition: .6s;
+    -moz-transition: .6s;
+    -ms-transition: .6s;
+    -o-transition: .6s;
+}
+
+.sugg-pro>article>figure :nth-last-of-type(2),
+.sugg-pro>article>figure :nth-of-type(3){
+    background-color: #b14545;
+    padding: 10px;
+    margin: 10px;
+    text-align: center;
+    position: absolute;
+}
+
+.sugg-pro>article>figure :nth-of-type(3){
+    left: 40%;top: 120%;
+    opacity: 0;
+}
+
+.sugg-pro>article>figure:hover :nth-of-type(3){
+    top: 66%;
+    color: white;
+    opacity: 100%;
+}
+
+.sugg-pro>article>figure :nth-last-of-type(2){
+    left: 5%;top: -5%;
+    opacity: 0;
+}
+
+.sugg-pro>article>figure:hover :nth-last-of-type(2){
+    top: 3.5%;
+    color: white;
+    opacity: 100%;
+}
+
+.sugg-pro>article>figure>figcaption h4{
+    font-weight: lighter;
+    text-transform: capitalize;
+}
+
+.sugg-pro>article>figure>figcaption p{
+    color: #b14545;
+}
+
+.sugg-head-men{
+    padding: 20px;
+    position: absolute;
+    top: 5px;left: 26%;
+    z-index: 7;
+    text-transform: capitalize;
+    font-size: 25px;
+}
+
+.sugg-head-men :first-of-type{
+    border-bottom: 2px solid black;
+}
+
+.sugg-head-men :first-child ~ *{
+    color: #00000070;
+}
+
+.sugg-head-men *{
+    padding: 10px;
+}
+
+/* middle banner style */
+
+.banner-middle>figure{
+    width: 100%;
+    position: relative;
+}
+
+.banner-middle>figure img{
+    width: 100%;
+}
+
+.banner-middle>figure>figcaption{
+    position: absolute;
+    top: 40%;
+    left: 10%;
+    width: 40%;
+}
+
+.banner-middle>figure>figcaption h5{
+    color: #b14545;
+    padding-bottom: 20px;
+    font-size: 40px;
+}
