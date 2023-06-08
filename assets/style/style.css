@@ -43,7 +43,7 @@ header>p {
 
 .mega-menu>ul {
     display: flex;
-    padding: 20px;
+    padding: 20px;justify-content: center;
     list-style-type: none;
     position: relative;
     overflow: hidden;
@@ -86,7 +86,7 @@ header>p {
     bottom: 5px;
 }
 
-.mega-menu>ul>li>a:hover {
+.mega-menu>ul>li>a:hover {justify-content: center;
     color: #ffffff96;
 }
 
@@ -227,6 +227,8 @@ header>p {
 .container-sugg>div>figure img{
     width: 400px;
     height: 620px;
+    object-fit: cover;
+    object-position: right;
 }
 
 .container-sugg>div>figure>figcaption{
@@ -382,4 +384,7 @@ header>p {
     color: #b14545;
     padding-bottom: 20px;
     font-size: 40px;
+    text-transform: capitalize;
 }
+
+/* footer Design */
