@@ -6,6 +6,7 @@
 
 body {
     font-family: 'Open Sans', sans-serif;
+    background-color: #F4D3D3;
 }
 
 a {text-decoration: none;}
@@ -14,8 +15,8 @@ ul {list-style-type: none;}
 /* header styles */
 
 header {
-    background-color: #f0f0f0;
-    color: gray;
+    background-color: #E8A9A9;
+    color: #000;
     text-align: center;
     padding: 20px;
 }
@@ -30,7 +31,7 @@ header>p {
 }
 
 .mega-menu {
-    background-color: rgb(182, 182, 182);
+    background-color: #46458C;
     transition: .3s;
     -webkit-transition: .3s;
     -moz-transition: .3s;
@@ -52,7 +53,7 @@ header>p {
 
 .mega-menu>ul>li a {
     padding: 20px;
-    color: #141414;
+    color: #fff;
     transition: .2s;
     -webkit-transition: .2s;
     -moz-transition: .2s;
@@ -73,7 +74,7 @@ header>p {
     position: absolute;
     bottom: -10px;
     width: 0;
-    border: 1px solid darkred;
+    border: 1px solid #E8A9A9;
     transition: .5s;
     -webkit-transition: .5s;
     -moz-transition: .5s;
@@ -86,8 +87,9 @@ header>p {
     bottom: 5px;
 }
 
-.mega-menu>ul>li>a:hover {justify-content: center;
-    color: #ffffff96;
+.mega-menu>ul>li>a:hover {
+    justify-content: center;
+    color: #ffffffcb;
 }
 
 
@@ -98,11 +100,12 @@ header>p {
     position: relative;
     overflow: hidden;
     font-size: 23px;
+    color: #fff;
 }
 
 .mega-menu>div>button::after{
     content: "favorite post";
-    background-color: #000;
+    background-color: #E8A9A9;
     position: absolute;
     bottom: -100px;
     left: 0;
@@ -117,7 +120,7 @@ header>p {
 .mega-menu>div>button:hover::after{
     bottom: 0;
     height: 100%;
-    color: #fff;
+    color: inherit;
     border-radius: 5px;
     -webkit-border-radius: 5px;
     -moz-border-radius: 5px;
@@ -142,7 +145,7 @@ header>p {
 .container>.container-collection>figure>img{width: 100%;}
 
 .container>.container-collection>figure figcaption{
-    background-color: #fff;
+    background-color: #F4D3D3;
     color: #000;
     top: 42%;
     left: 38%;
@@ -156,7 +159,7 @@ header>p {
 
 .container>.container-collection>figure>figcaption::before{
     content: '';
-    border: 5px solid #b14545;
+    border: 5px solid #090580;
     width: 0;
     height: 0;
     position: absolute;
@@ -170,7 +173,7 @@ header>p {
 }
 .container>.container-collection>figure>figcaption::after{
     content: '';
-    border: 5px solid #b14545;
+    border: 5px solid #090580;
     width: 0;
     height: 0;
     position: absolute;
@@ -256,7 +259,7 @@ header>p {
 }
 
 .sugg-head :first-of-type{
-    border-bottom: 2px solid black;
+    border-bottom: 2px solid #090580;
 }
 
 .sugg-head :first-child ~ *{
@@ -306,7 +309,7 @@ header>p {
 
 .sugg-pro>article>figure :nth-last-of-type(2),
 .sugg-pro>article>figure :nth-of-type(3){
-    background-color: #b14545;
+    background-color: #090580;
     padding: 10px;
     margin: 10px;
     text-align: center;
@@ -341,7 +344,7 @@ header>p {
 }
 
 .sugg-pro>article>figure>figcaption p{
-    color: #b14545;
+    color: #090580;
 }
 
 .sugg-head-men{
@@ -351,14 +354,6 @@ header>p {
     z-index: 7;
     text-transform: capitalize;
     font-size: 25px;
-}
-
-.sugg-head-men :first-of-type{
-    border-bottom: 2px solid black;
-}
-
-.sugg-head-men :first-child ~ *{
-    color: #00000070;
 }
 
 .sugg-head-men *{
@@ -384,7 +379,7 @@ header>p {
 }
 
 .banner-middle>figure>figcaption h5{
-    color: #b14545;
+    color: #090580;
     padding-bottom: 20px;
     font-size: 40px;
     text-transform: capitalize;
@@ -393,7 +388,7 @@ header>p {
 /* footer Design */
 
 footer{
-    background-color: #141414;
+    background-color: #E8A9A9;
     width: 100%;
     display: flex;
     justify-content: center;
@@ -417,12 +412,12 @@ footer{
 
 footer h6{
     padding-bottom: 10px;
-    color: white;
+    color: #090580;
     font-size:20px;
 }
 
 .footer-text>div:first-child>p{
-    color: #868686;
+    color: #000;
     font-size: 14px;
 }
 
@@ -431,22 +426,22 @@ footer h6{
 }
 
 .footer-text div:hover{
-    box-shadow: 1px 1px 10px white;
+    box-shadow: 1px 1px 10px #090580;
 }
 
 .footer-text a{
-    color: #868686;
+    color: #2c2c2c;
     display: flex;
     justify-content: center;
     padding: 5px 0;
 }
 
 .footer-text a:hover{
-    color: white;
+    color: #46458C;
 }
 
 footer hr{
-    color: #b14545;
+    color: #46458C;
 }
 
 .footer-social{
@@ -461,8 +456,8 @@ footer hr{
 }
 
 .footer-social>div a{
-    background-color: #eceeef;
-    color: #b14545;
+    background-color: #F4D3D3;
+    color: #46458C;
     font-size: 16px;
     display: flex;
     justify-content: center;
@@ -486,17 +481,17 @@ footer hr{
 
 .footer-social>div a:hover{
     color: #fff;
-    background-color:#b14545;
+    background-color:#090580;
 }
 
 .footer-social p{
-    color: #868686;
+    color: #000;
 }
 
 .footer-social>p a{
-    color: #b14545;
+    color: #090580;
 }
 
 .footer-social>p a:hover{
-    color: #fff;
+    color: #46458C;
 }
