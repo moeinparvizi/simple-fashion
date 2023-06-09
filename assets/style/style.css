@@ -26,9 +26,7 @@ header>* {
     text-transform: capitalize;
 }
 
-header>p {
-    margin-bottom: 10px;
-}
+header>p {margin-bottom: 10px;}
 
 .mega-menu {
     background-color: #46458C;
@@ -266,9 +264,7 @@ header>p {
     color: #00000070;
 }
 
-.sugg-head *{
-    padding: 10px;
-}
+.sugg-head *{padding: 10px;}
 
 .sugg-pro{
     margin: 100px 0;
@@ -278,9 +274,7 @@ header>p {
     flex-wrap: wrap;
 }
 
-.sugg-pro *{
-    padding: 5px;
-}
+.sugg-pro *{padding: 5px;}
 
 .sugg-pro>article>figure{
     position: relative;
@@ -356,9 +350,7 @@ header>p {
     font-size: 25px;
 }
 
-.sugg-head-men *{
-    padding: 10px;
-}
+.sugg-head-men *{padding: 10px;}
 
 /* middle banner style */
 
@@ -367,9 +359,7 @@ header>p {
     position: relative;
 }
 
-.banner-middle>figure img{
-    width: 100%;
-}
+.banner-middle>figure img{width: 100%;}
 
 .banner-middle>figure>figcaption{
     position: absolute;
@@ -395,9 +385,7 @@ footer{
     padding: 20px;
 }
 
-.footer-container{
-    width: 70%;
-}
+.footer-container{width: 70%;}
 
 .footer-container .footer-text{
     display: flex;
@@ -421,9 +409,7 @@ footer h6{
     font-size: 14px;
 }
 
-.footer-text div{
-    padding: 10px;
-}
+.footer-text div{padding: 10px;}
 
 .footer-text div:hover{
     box-shadow: 1px 1px 10px #090580;
@@ -436,13 +422,9 @@ footer h6{
     padding: 5px 0;
 }
 
-.footer-text a:hover{
-    color: #46458C;
-}
+.footer-text a:hover{color: #46458C;}
 
-footer hr{
-    color: #46458C;
-}
+footer hr{color: #46458C;}
 
 .footer-social{
     display: flex;
@@ -451,9 +433,7 @@ footer hr{
     padding-top: 20px;
 }
 
-.footer-social ul{
-    display: flex;
-}
+.footer-social ul{display: flex;}
 
 .footer-social>div a{
     background-color: #F4D3D3;
@@ -473,10 +453,6 @@ footer hr{
     -moz-transition: .4s;
     -ms-transition: .4s;
     -o-transition: .4s;
-    -webkit-border-radius:;
-    -moz-border-radius:;
-    -ms-border-radius:;
-    -o-border-radius:;
 }
 
 .footer-social>div a:hover{
@@ -484,14 +460,8 @@ footer hr{
     background-color:#090580;
 }
 
-.footer-social p{
-    color: #000;
-}
+.footer-social p{color: #000;}
 
-.footer-social>p a{
-    color: #090580;
-}
+.footer-social>p a{color: #090580;}
 
-.footer-social>p a:hover{
-    color: #46458C;
-}
+.footer-social>p a:hover{color: #46458C;}
