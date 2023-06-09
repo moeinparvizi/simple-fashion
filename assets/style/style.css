@@ -191,6 +191,7 @@ header>p {
 .container-sugg{
     display: flex;
     justify-content: space-between ;
+    flex-wrap: wrap;
     position: relative;
 }
 
@@ -250,6 +251,8 @@ header>p {
     z-index: 7;
     text-transform: capitalize;
     font-size: 25px;
+    display: flex;
+    flex-wrap: wrap;
 }
 
 .sugg-head :first-of-type{
@@ -388,3 +391,112 @@ header>p {
 }
 
 /* footer Design */
+
+footer{
+    background-color: #141414;
+    width: 100%;
+    display: flex;
+    justify-content: center;
+    padding: 20px;
+}
+
+.footer-container{
+    width: 70%;
+}
+
+.footer-container .footer-text{
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: space-between;
+    padding: 20px;
+}
+
+.footer-text>div:first-child{
+    width: 60%;
+}
+
+footer h6{
+    padding-bottom: 10px;
+    color: white;
+    font-size:20px;
+}
+
+.footer-text>div:first-child>p{
+    color: #868686;
+    font-size: 14px;
+}
+
+.footer-text div{
+    padding: 10px;
+}
+
+.footer-text div:hover{
+    box-shadow: 1px 1px 10px white;
+}
+
+.footer-text a{
+    color: #868686;
+    display: flex;
+    justify-content: center;
+    padding: 5px 0;
+}
+
+.footer-text a:hover{
+    color: white;
+}
+
+footer hr{
+    color: #b14545;
+}
+
+.footer-social{
+    display: flex;
+    justify-content: space-between;
+    flex-wrap: wrap;
+    padding-top: 20px;
+}
+
+.footer-social ul{
+    display: flex;
+}
+
+.footer-social>div a{
+    background-color: #eceeef;
+    color: #b14545;
+    font-size: 16px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    align-content: center;
+    width: 44px;
+    height: 44px;
+    text-align: center;
+    margin-right: 8px;
+    border-radius: 100%;
+    transition: .4s;
+    -webkit-transition: .4s;
+    -moz-transition: .4s;
+    -ms-transition: .4s;
+    -o-transition: .4s;
+    -webkit-border-radius:;
+    -moz-border-radius:;
+    -ms-border-radius:;
+    -o-border-radius:;
+}
+
+.footer-social>div a:hover{
+    color: #fff;
+    background-color:#b14545;
+}
+
+.footer-social p{
+    color: #868686;
+}
+
+.footer-social>p a{
+    color: #b14545;
+}
+
+.footer-social>p a:hover{
+    color: #fff;
+}
